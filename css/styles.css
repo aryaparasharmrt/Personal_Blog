@@ -1,0 +1,90 @@
+/* Apply a minimalistic reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with a background gradient */
+header {
+    background: linear-gradient(135deg, #2C3E50, #3498DB);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: slideDown 1s ease;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3498DB;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #E74C3C;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+.image-paragraph-container {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px; /* Add margin to separate paragraphs with images */
+}
+
+.image-paragraph-container img {
+    max-width: 200px; /* Set the maximum width for the image */
+    margin-right: 20px; /* Add margin to the right of the image for spacing */
+}
+
+.image-paragraph-container p {
+    flex: 1; /* Allow the paragraph to take up the remaining space */
+}
+
+
+/* Add animations */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
